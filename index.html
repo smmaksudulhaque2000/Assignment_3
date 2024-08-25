@@ -11,12 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <!-- Customize Font -->
-    <style>
-      .font-manrope {
-        font-family: "Manrope", sans-serif;
-      }
-    </style>
     <!-- Font Awesome CDN -->
     <script
       src="https://kit.fontawesome.com/08339edb7b.js"
@@ -46,15 +40,20 @@
               card_bg2: "rgb(239, 218, 110)",
               card_bg3: "rgb(164, 218, 195)",
               card_bg4: "rgb(119, 170, 234)",
+              fbg: "rgb(28, 28, 28)",
+              ffc: "rgb(233, 233, 233)",
             },
+            fontFamily:{
+              'manrope':['Manrope', 'sans-serif'],
+            }
           },
         },
       };
     </script>
   </head>
-  <body class="container mx-auto">
+  <body class="container mx-auto font-manrope">
     <!-- Header Part START Here-->
-    <header class="bg-gray-50 mt-5">
+    <header class="bg-gray-50 pt-5">
       <!-- NAV BAR START HERE -->
       <div class="navbar flex justify-between">
         <div class="navbar-start">
@@ -90,11 +89,13 @@
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-14 w-52 p-2"
           >
-            <li><a>Item 1</a></li>
-            <li><a>Item 2</a></li>
-            <li><a>Item 3</a></li>
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact Us</a></li>
           </ul>
         </div>
         <div class="navbar-end hidden lg:flex justify-end gap-5">
@@ -118,24 +119,24 @@
       </div>
       <!-- NAV BAR END HERE -->
       <!-- BANNER START HERE -->
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center py-10">
         <div class="w-5/6 lg:w-2/6 flex-1">
           <img class="w-full" src="assets/banner.png" />
         </div>
         <div class="flex-1 flex flex-col justify-center gap-4 items-center">
-          <h1 class="text-4xl lg:text-6xl font-bold w-5/6 lg:w-4/6 text-center">
+          <h1 class="text-4xl lg:text-6xl font-extrabold w-11/12 lg:w-4/6 text-center text-hfc my-5">
             A barn house of this design has a striking appearance
           </h1>
           <p
-            class="text-base text-fc font-semibold w-5/6 lg:w-7/12 text-center"
+            class="text-base text-fc font-semibold w-11/12 lg:w-7/12 text-center"
           >
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents, and
             large windows that flood the space with natural light.
           </p>
-          <div class="mx-auto w-10/12 lg:w-4/12 flex justify-center">
+          <div class="mx-auto w-11/12 lg:w-2/12 flex justify-center">
             <a
-              class="w-10/12 lg:w-5/12 md:w-6/12 btn bg-preprimary rounded-full text-xl"
+              class="btn bg-preprimary rounded-full text-xl w-full font-bold"
               >View Details
               <i
                 class="fa-solid fa-arrow-right bg-primary p-2 rounded-full -rotate-45 text-black"
@@ -148,7 +149,7 @@
     </header>
     <!-- Header Part END Here-->
     <!-- Main Part START Here-->
-    <main class="mt-20">
+    <main>
       <!-- DESIGN Section START Here-->
       <section
         class="bg-design flex flex-col lg:flex-row gap-5 lg:justify-between p-10 lg:pt-14 lg:px-14 relative"
@@ -160,48 +161,43 @@
             <i class="fa-solid fa-arrow-right"></i> <a href="#">About Us</a>
           </button>
           <h1
-            class="text-3xl lg:text-4xl font-bold text-center lg:text-left text-hfc py-5"
+            class="text-3xl lg:text-4xl font-bold text-center lg:text-left text-hfc py-3"
           >
             We design thoughtful, <br />
             liveable spaces
           </h1>
-          <p class="text-base font-fc text-center lg:text-left mb-5">
-            The barn house captivates with its blend of rustic charm and modern
-            sophistication, featuring weathered wood, sleek metal accents.
+          <p class="text-base font-fc text-center lg:text-left py-3 lg:py-0 mb-3">
+            We design spaces that are not only aesthetically pleasing but also deeply thoughtful and livable, where every detail is carefully considered to enhance both the beauty and the functionality of the environment, creating a harmonious balance that truly feels like home.
           </p>
           <div>
             <div class="hero bg-white rounded-2xl mb-5">
-              <div class="hero-content flex-row">
+              <div class="hero-content flex-row items-start lg:items-center">
                 <img
                   src="assets/commercial.png"
-                  class="rounded-lg shadow-2xl w-15 lg:w-24"
+                  class="rounded-lg shadow-2xl w-12 lg:w-24 "
                 />
                 <div>
-                  <h1 class="text-hfc text-xl lg:text-3xl font-bold">
-                    Box Office News!
+                  <h1 class="text-hfc text-xl font-bold">
+                    Commercial
                   </h1>
                   <p class="text-fc py-3 lg:pr-20">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                    assumenda excepturi exercitationem quasi. In deleniti eaque
-                    aut repudiandae et a id nisi.
+                    We transform commercial spaces into vibrant, dynamic environments that inspire productivity and success.
                   </p>
                 </div>
               </div>
             </div>
             <div class="hero bg-white rounded-2xl">
-              <div class="hero-content flex-row">
+              <div class="hero-content flex-row items-start lg:items-center">
                 <img
-                  src="assets/commercial.png"
-                  class="rounded-lg shadow-2xl w-15 lg:w-24"
+                  src="assets/residential.png"
+                  class="rounded-lg shadow-2xl w-12 lg:w-24"
                 />
                 <div>
-                  <h1 class="text-hfc text-xl lg:text-3xl font-bold">
-                    Box Office News!
+                  <h1 class="text-hfc text-xl font-bold">
+                    Residential
                   </h1>
                   <p class="text-fc py-3 lg:pr-20">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                    assumenda excepturi exercitationem quasi. In deleniti eaque
-                    aut repudiandae et a id nisi.
+                    We craft residential spaces that reflect personal style and comfort, turning houses into cherished homes.
                   </p>
                 </div>
               </div>
@@ -233,40 +229,35 @@
         <p
           class="text-base text-center text-fc font-semibold w-11/12 lg:w-5/12 mx-auto"
         >
-          The barn house captivates with its blend of rustic charm and modern
-          sophistication, featuring weathered wood, sleek metal accents.
+        Our work process is a collaborative journey, where we combine creativity, expertise, and attention to detail to bring your vision to life from concept to completion.
         </p>
         <div class="grid lg:grid-cols-4 gap-4 p-10 lg:p-14 pt-4">
           <div class="bg-card_bg1 rounded-xl p-5 lg:p-7">
             <img src="assets/concept.png" alt="Batti" />
             <h3 class="text-xl font-bold py-2">Condept</h3>
             <p class="text-base text-fc">
-              The barn house captivates with its blend of rustic charm and
-              modern.
+              Our concept is centered on innovative, functional, and elegant design.
             </p>
           </div>
           <div class="bg-card_bg2 rounded-xl p-5 lg:p-7">
             <img src="assets/flow-chart.png" alt="Batti" />
-            <h3 class="text-xl font-bold py-2">Condept</h3>
+            <h3 class="text-xl font-bold py-2">Design Process</h3>
             <p class="text-base text-fc">
-              The barn house captivates with its blend of rustic charm and
-              modern.
+              Our design process is creative and precise.
             </p>
           </div>
           <div class="bg-card_bg3 rounded-xl p-5 lg:p-7">
             <img src="assets/vision.png" alt="Batti" />
-            <h3 class="text-xl font-bold py-2">Condept</h3>
+            <h3 class="text-xl font-bold py-2">Supervision</h3>
             <p class="text-base text-fc">
-              The barn house captivates with its blend of rustic charm and
-              modern.
+              Supervision ensures every detail meets our high standards from start to finish.
             </p>
           </div>
           <div class="bg-card_bg4 rounded-xl p-5 lg:p-7">
             <img src="assets/budget-planning.png" alt="Batti" />
-            <h3 class="text-xl font-bold py-2">Condept</h3>
+            <h3 class="text-xl font-bold py-2">Budget Planning</h3>
             <p class="text-base text-fc">
-              The barn house captivates with its blend of rustic charm and
-              modern.
+              Budget planning aligns your vision with practical financial strategies for optimal results.
             </p>
           </div>
         </div>
@@ -274,9 +265,9 @@
       <!-- WORKS Section END Here-->
       <!-- PORTFOLIO Section START Here-->
       <section class="pt-10 lg:pt-20">
-        <div class="mx-auto flex justify-center">
+        <div class="mx-auto flex justify-center w-7/12 lg:w-2/12">
           <button
-            class="btn bg-preprimary rounded-full font-bold text-fc w-7/12 lg:w-2/12"
+            class="btn bg-preprimary rounded-full font-bold text-fc"
           >
             <i class="fa-solid fa-arrow-right"></i>
             <a href="#">Explore our Latest works</a>
@@ -288,8 +279,7 @@
         <p
           class="text-base text-center text-fc font-semibold w-11/12 lg:w-5/12 mx-auto"
         >
-          The barn house captivates with its blend of rustic charm and modern
-          sophistication, featuring weathered wood, sleek metal accents.
+        Explore our latest portfolio to see the freshest examples of our innovative and stylish designs.
         </p>
         <div class="flex flex-col lg:flex-row px-10 py-3 gap-5">
           <div class="hero bg-white rounded-2xl shadow-2xl lg:shadow-none">
@@ -304,9 +294,7 @@
                   Commercial
                 </h1>
                 <p class="text-base text-fcc py-3">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                  We excel in designing commercial spaces that drive business success and enhance customer experiences
                 </p>
                 <a href="#" class="text-xl text-hfc font-bold mr-2"
                   >View Details</a
@@ -330,11 +318,11 @@
             <img src="assets/img5.png" alt="image" class="w-full" />
           </div>
           <div
-            class="flex justify-center p-5 lg:border border-gray-100 bg-white rounded-2xl shadow-2xl lg:shadow-none"
+            class="flex justify-center p-5 lg:border border-gray-100 bg-white rounded-2xl shadow-2xl lg:shadow-none lg:ml-6"
           >
             <img src="assets/img3.png" alt="image" class="w-full" />
           </div>
-          <div class="hero bg-white rounded-2xl">
+          <div class="hero bg-white rounded-2xl  ">
             <div
               class="lg:border border-gray-100 shadow-2xl lg:shadow-none bg-white rounded-2xl hero-content flex flex-col lg:flex-row"
             >
@@ -346,9 +334,7 @@
                   Commercial
                 </h1>
                 <p class="text-base text-fcc py-3">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                  Our commercial designs create dynamic environments that foster growth and elevate brand presence.
                 </p>
                 <a href="#" class="text-xl text-hfc font-bold mr-2"
                   >View Details</a
@@ -367,9 +353,109 @@
         </div>
       </section>
       <!-- PORTFOLIO Section END Here-->
+       <!-- CONNECT Section START Here-->
+       <section style="background-image: url(assets/bg.jpg);" class="py-20">
+        <div class="mx-auto flex justify-center w-6/12 lg:w-1/12 p-2 py-1">
+          <button
+            class="btn bg-preprimary rounded-full text-fc"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+            <a href="#">Let’s Connect</a>
+          </button>
+        </div>
+        <h1 class="text-3xl text-center text-hfc font-bold py-4 w-3/4 mx-auto">
+          Let’s Discuss Next Project
+        </h1>
+        <p
+          class="text-base text-center text-fc font-semibold w-11/12 lg:w-5/12 mx-auto mb-5"
+        >
+        Let's schedule a time to discuss your next project in detail, so we can explore your vision, understand your goals, and develop a tailored plan to bring your ideas to life with precision and creativity.
+        </p>
+        <div
+          class="flex flex-col lg:flex-row justify-center w-11/12 lg:w-8/12 mx-auto mb-5 gap-5 lg:gap-0"
+        >
+          <div class="w-full flex justify-center">
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="input input-bordered w-11/12 rounded-full text-base"
+            />
+          </div>
+          <div class="w-full flex justify-center">
+            <input
+              type="text"
+              placeholder="Last Name*"
+              class="input input-bordered w-11/12 rounded-full text-base"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row justify-center w-11/12 lg:w-8/12 mx-auto gap-5 lg:gap-0"
+        >
+          <div class="w-full flex justify-center">
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="input input-bordered w-11/12 rounded-full text-base"
+            />
+          </div>
+          <div class="w-full flex justify-center">
+            <input
+              type="text"
+              placeholder="Last Name*"
+              class="input input-bordered w-11/12 rounded-full text-base"
+            />
+          </div>
+        </div>
+        <div class="w-11/12 lg:w-8/12 p-5 mx-auto">
+          <textarea
+            class="textarea textarea-bordered w-full h-60 resize-none"
+            placeholder="Write your message here"
+          ></textarea>
+        </div>
+        <div class="w-11/12 lg:w-8/12 mx-auto px-5">
+          <button class="btn bg-primary rounded-full text-fc w-full py-3">
+            <a class="text-xl text-black" href="#">Send Mail</a>
+            <i
+              class="fa-solid fa-arrow-right bg-black p-1 rounded-full -rotate-45 text-white"
+            ></i>
+          </button>
+        </div>
+      </section>
+       <!-- CONNECT Section END Here-->
     </main>
     <!-- Main Part START Here-->
-    <!-- Footer Part -->
-    <footer></footer>
+    <!-- Footer Part START HERE-->
+    <footer>
+      <section class="bg-fbg py-20 mt-1">
+        <div class="flex gap-3 justify-center">
+          <i
+            class="fa-solid fa-arrow-right bg-primary p-3 rounded-full -rotate-45 text-black"
+          ></i>
+          <h3 class="text-white text-3xl font-bold">Rinterio</h3>
+        </div>
+        <p class="text-base text-fcc font-semibold w-5/6 lg:w-7/12 text-center mx-auto my-5">
+          Rinterio brings your building dreams to life with expert craftsmanship and attention to detail. Contact us to discuss your next project and experience seamless, high-quality construction.
+        </p>
+        <div class="w-3/4 mx-auto mb-5">
+          <ul class="menu menu-horizontal lg:menu-vertical  rounded-box text-white flex items-center flex-col lg:flex-row justify-between">
+            <li><a class="font-medium text-ffc">Home</a></li>
+            <li><a class="text-ffc">Services</a></li>
+            <li><a class="text-ffc">Portfolio</a></li>
+            <li><a class="text-ffc">Blogs</a></li>
+            <li><a class="text-ffc">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="w-5/6 lg:w-2/12 mx-auto px-2">
+          <button class="btn bg-primary rounded-full text-fc w-full py-3">
+            <a class="text-xl text-black" href="#">Book Consult</a>
+            <i
+              class="fa-solid fa-arrow-right bg-black p-2 rounded-full -rotate-45 text-white"
+            ></i>
+          </button>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer Part END HERE-->
   </body>
 </html>
